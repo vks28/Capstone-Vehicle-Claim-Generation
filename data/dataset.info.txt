@@ -1,0 +1,22 @@
+📄 Car Damage Detection (CarDD) Dataset
+
+GitHub Repository: https://cardd-ustc.github.io/
+
+This repository contains:
+- Research paper on Car Damage Detection
+- Dataset download links and descriptions
+- Licensing and usage terms
+
+This capstone project uses a subset of the CarDD dataset, focusing on:
+- Scratch
+- Glass Shattered
+
+Refer to the above link for full dataset and documentation.
+
+
+The Excel files in the `captions/` folder contain:
+- Manually or auto-generated captions
+- Corresponding image file names or IDs from the CarDD dataset
+
+Images are **not stored in this repository** due to size and copyright limits.
+Use the CarDD GitHub repo for image access.

@@ -1,0 +1,45 @@
+
+🔧 Installation & Setup for Captioning with Ollama (LLaMA3 Vision)
+
+1. 🛠️ Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
+
+2. ✅ Verify Installation
+ollama --version
+
+3. 🚀 Start Ollama Server
+ollama serve &
+
+4. 🧪 Confirm Server Is Running
+ps aux | grep ollama
+
+5. 📦 List Installed Models
+ollama list
+
+6. ⬇️ Pull Vision Model (if not already installed)
+ollama pull llama3.2-vision
+
+7. 🔁 Restart Ollama Server (Optional but recommended)
+pkill ollama         # Stop existing instance
+ollama serve &       # Start a fresh instance
+
+8. 🧪 Test Model via CURL (Optional)
+curl http://127.0.0.1:11434/api/generate \
+-d '{"model": "llama3.2-vision", "prompt": "Describe a damaged car."}'
+
+
+📁 Running Captioning Scripts
+
+1. 📂 Navigate to Your Working Directory
+cd /notebooks
+ls
+
+2. 🧠 Run the Captioning Script (Example)
+python image_scratch_cap.py   # For scratch damage
+python image_gs_cap.py        # For shattered glass
+
+> Both scripts:
+- Use `llama3.2-vision` model via Ollama.
+- Accept a folder of images.
+- Generate structured captions.
+- Save results as CSV files.
