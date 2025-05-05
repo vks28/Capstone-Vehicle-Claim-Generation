@@ -34,7 +34,7 @@ Image quality was evaluated using:
 - Evaluated the experts using FID metric.
 - explored various methods to merge the two experts.
 - Generated synthetic images based on descriptive captions.
-- 
+  
 
 ---
 
